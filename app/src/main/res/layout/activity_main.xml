@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.sharedprefsapp.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/act_main_progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ProgressBar
+            android:id="@+id/act_main_progressbar"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            />
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/act_main_progress_max_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:inputType="number"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/act_main_progress_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress:"
+            android:textSize="16dp"
+            />
+        <EditText
+            android:layout_marginLeft="8dp"
+            android:inputType="number"
+            android:id="@+id/act_main_progress_edittext"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/act_main_seekbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/act_main_seekbar"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                />
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:id="@+id/act_main_seekbar_max_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:inputType="number"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/act_main_seekbar_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seekbar:"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/act_main_seekbar_edittext"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/act_main_checkbox_enable_toggles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Toggles"
+        android:checked="false"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:id="@+id/act_main_toggleb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/act_main_toggleb_2X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOn="2X ON"
+            android:textOff="2X OFF"
+            android:clickable="false"
+            android:layout_weight="1"
+            />
+        <ToggleButton
+            android:id="@+id/act_main_toggleb_4X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:textOn="4X ON"
+            android:textOff="4X OFF"/>
+        <ToggleButton
+            android:id="@+id/act_main_toggleb_6X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+            android:clickable="false"
+        android:textOn="6X ON"
+            android:layout_weight="1"
+        android:textOff="6X OFF"/>
+        <ToggleButton
+            android:id="@+id/act_main_toggleb_8X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+            android:layout_weight="1"
+        android:textOn="8X ON"
+        android:textOff="8X OFF"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/act_main_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <RadioButton
+            android:id="@+id/act_main_radiobutton_div_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divide by 2"/>
+        <RadioButton
+            android:id="@+id/act_main_radiobutton_div_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divide by 4"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/act_main_radiobutton_div_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divide by 8"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/act_main_button_clear_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR RADIO BUTTON SELECTION"
+        android:textStyle="bold"/>
+
+    <Switch
+        android:id="@+id/act_main_switch_add_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add 10 to progress"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Switch
+        android:id="@+id/act_main_switch_add_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add 20 to progress"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Switch
+    android:id="@+id/act_main_switch_add_30"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Add 30 to progress"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    />
+</LinearLayout>
